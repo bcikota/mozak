@@ -1,0 +1,334 @@
+
+@import 'reset';
+@import 'pages/DeloviMozga';
+@import 'pages/CelijskaStruktura';
+@import 'pages/MozdaneFunkcije';
+@import 'pages/RombastiMozak';
+@import 'pages/SrednjiMozak';
+@import 'pages/PrednjiMozak';
+@import 'pages/GalerijaSlika';
+@import 'pages/Kontakt';
+@import 'layout/GridSystem';
+@import 'layout/header';
+@import 'layout/nav';
+@import 'helpers/variables';
+@import 'layout/section';
+@import 'layout/footer';
+
+body {
+    font-size: 16px;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    background-color: black;
+    font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+    box-sizing: border-box;
+    -webkit-text-size-adjust: 100%;
+
+    @media only screen and (max-width: 550px) {
+        padding: .1rem;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $svetla-slova;
+}
+
+.index nav {
+    ul {
+        li {
+
+        &:first-of-type {
+            a {
+                color: rgb(177, 135, 30)!important;
+                &:hover {
+                    color:  rgb(177, 135, 30) !important;
+                }
+            }
+         }  
+        }
+    }
+}
+.wrapper {
+    color: $svetla-slova;
+    max-width: 97rem;
+    margin: 0 auto;
+}
+
+
+
+h2 {
+    text-decoration: underline;
+    font-weight: bold; 
+}
+
+img {
+    width: 100%;
+}
+
+i {
+    font-style: italic;
+    font-weight: bold; 
+}
+
+b {
+    font-weight: bold;
+    display: block;
+}
+
+.b-center {
+    text-align: center !important;
+}
+
+
+
+.a-dark {
+    color: $tamna-slova !important; 
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.ukratko { 
+        background: #caac84;
+        color: #200c00;
+
+    article {
+        @media only screen and (min-width:500px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            h2 {
+                grid-column: 1/-1;
+            }
+
+            p {
+                grid-column: 1;
+            }
+
+            img {
+                grid-column: 2;
+            }
+        }
+        @media only screen and (min-width:943px) {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            
+        }
+        
+        @media only screen and (min-width:$laptopL) {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto auto;
+        }
+
+        h2 {
+            @media only screen and (min-width: $tablet) {
+                text-align: center;
+                margin-bottom: 2rem;
+                padding-top: 2rem;
+            }
+
+            @media only screen and (min-width:$laptop) {
+                grid-column: 1/-1;
+                font-size: 1.5rem;
+            }
+
+            @media only screen and (min-width:$laptopL) {
+                font-size: 1.8rem;
+                grid-row: 1/2;
+                grid-column: 1/2;
+                align-self: center;
+            }
+
+            @media only screen and (min-width:1214px) {
+                position: relative;
+                top: 2rem;
+            }
+        }
+
+        p {
+            @media only screen and (min-width:$laptop) {
+                padding: 0 1rem;
+                line-height: 1.5;
+            }
+
+            @media only screen and (min-width:$laptopL) {
+                grid-column: 1/2;
+                font-size: 1.4rem;
+                grid-row: 2/4;
+            }
+
+            @media only screen and (min-width:1214px) {
+                line-height: 2;
+                padding-left: 6rem; padding-top: 4rem;
+            }
+        }
+
+        img {
+            align-self: center;
+            padding: 0;
+            @media only screen and (max-width:$tablet) {
+                max-width: 14rem;
+            }
+            
+            display: block;
+            max-width: 18rem;
+            margin: 0 auto;
+            transform: rotate(180deg);
+                transition: 2s;
+                &:hover {
+                    transform: rotate(360deg);
+                    transition: 2s;
+                }
+            
+            @media only screen and (min-width:$laptopL) {
+                grid-column: 2/3;
+                grid-row: 2/3;
+                
+                max-width: 70%;
+                
+            }
+        }
+    }
+}
+
+.wrapper-galerija {
+    position: relative;
+    text-align: center;
+    max-width: 1000px;
+    margin-top: -0.1rem;
+    
+    @media only screen and (min-width:551px) {
+        margin-top: -1rem;
+    }
+
+    @media only screen and (min-width:$laptop) {
+        margin-top: 0;
+    }
+
+    @media only screen and (min-width:$laptopL) {
+        margin: 0 auto;
+    }
+
+    a:nth-child(2) {
+        position: absolute;
+        max-width: 10%;
+        top: 7rem;
+        left: 0;
+        display: inline;
+
+        @media only screen and (min-width:$laptop) {
+            top: 15rem;
+        }
+
+        @media only screen and (min-width:$laptopL) {
+            top: 17rem;
+        }
+
+        z-index: 1;
+
+    }
+
+    img:nth-child(3) {
+        margin-top: .1rem;
+        max-width: 30rem;
+        margin: 0 auto;
+
+        @media only screen and (min-width: $laptop) {
+            max-width: 37rem;
+        }
+
+        @media only screen and (min-width: $laptopL) {
+            max-width: 47rem;
+        }
+    }
+
+    a:nth-child(4) {
+        position: absolute;
+        max-width: 10%;
+        top: 7rem;
+        right: 0;
+        display: inline;
+
+        @media only screen and (min-width:$laptop) {
+            top: 15rem;
+        }
+
+        @media only screen and (min-width:$laptopL) {
+            top: 17rem;
+        }
+        
+    }
+    
+
+    a {
+        opacity: .7;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    [href="../GalerijaSlika.html"] {
+        display: block;
+        max-width: 13rem;
+        margin: 0 auto;
+        margin-bottom: .1rem;
+        z-index: 1;
+        background: grey;
+        color: rgb(240, 239, 239);
+        padding: .5rem 1rem;
+        border-bottom-left-radius: .5rem;
+        border-bottom-right-radius: .5rem;
+        font-size: 1.2rem;
+
+        @media only screen and (min-width:$laptop) {
+            padding: 1rem 2rem;
+            margin-bottom: 3rem;
+            border-radius: 1rem;
+            max-width: 20rem;
+        }
+
+        @media only screen and (min-width:$laptopL) {
+            font-size: 1.5rem;
+            font-weight: bold;
+           
+        }
+    }
+    
+    [alt="right"] {
+        position: absolute;
+        max-width: 10%;
+        top: 7rem;
+        right: 0;
+        display: inline;
+
+        @media only screen and (min-width:$laptop) {
+            top: 15rem;
+        }
+
+        @media only screen and (min-width:$laptopL) {
+            top: 17rem;
+        }
+
+        
+
+    }
+
+    [alt="left"] {
+        position: absolute;
+        max-width: 10%;
+        top: 7rem;
+        left: 0;
+        display: inline;
+
+        @media only screen and (min-width:$laptop) {
+            top: 15rem;
+        }
+
+        @media only screen and (min-width:$laptopL) {
+            top: 17rem;
+        }
+    }
+}

@@ -1,0 +1,184 @@
+@import 'helpers/variables';
+
+.celija {
+    nav {
+        ul {
+            li {
+                &:nth-of-type(3) {
+                    a {
+                        color: rgb(177, 135, 30)!important;
+                        &:hover {
+                            color:  rgb(177, 135, 30) !important;
+                        }
+                    }
+                }  
+            }
+        }
+    }
+
+    section {
+        article {
+           padding: 1rem 0;
+            @media only screen and (min-width: 880px) {
+                padding: 3rem 0;
+            }
+
+            @media only screen and (min-width: $laptopL) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            > * {
+                @media only screen and (max-width: 1213px) {
+                    grid-column: 1/-1;
+                }
+            }
+
+            [alt="gradja neurona"] {
+                @media only screen and (max-width: 1213px) {
+                    grid-row: 5;
+                }
+
+                @media only screen and (min-width: 1213px) {
+                    align-self: center;
+                }
+            }
+
+            b {
+                padding: 2rem 1rem;
+
+                @media only screen and (min-width: $tablet) {
+                    text-align: center;
+                }
+
+                &:first-of-type {
+                    grid-column: 1/-1;
+                    grid-row: 2;
+                }
+
+                &:last-of-type {
+                    grid-column:1/-1;
+                    grid-row: 11;
+                    max-width: 35rem;
+                    margin: 0 auto;
+                    @media only screen and (min-width: $laptopL) {
+                        padding-top: 4rem;
+                    }
+                }
+            }
+
+            p {
+                padding: 2rem 1rem;
+
+                @media only screen and (min-width: 880px) {
+                    padding: 2rem 3rem;
+                }
+                
+                @media only screen and (min-width: $laptopL) {
+                    padding: 3rem;
+                }
+
+                &:first-of-type {
+                    grid-column: 1/-1;
+                    grid-row: 4;
+                }
+
+                &:nth-of-type(2) {
+                    align-self: center;
+                    
+                    @media only screen and (max-width: 1213px) {
+                        grid-row: 6;
+                    }
+
+                    @media only screen and (min-width: $laptopL) {
+                        padding-right: 0;
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    grid-column: 2;
+                    align-self: center;
+
+                    @media only screen and (min-width: $laptopL) {
+                        padding-left: 0;
+                    }
+                }
+
+                &:nth-of-type(4) {
+                    grid-column: 1/-1;
+                }
+            }
+
+            [alt="siva i bela masa"] {
+                grid-column: 1;
+                grid-row: 6; 
+               
+                @media only screen and (max-width: 1213px) {
+                    grid-row: 7;
+                    align-self: center;
+                }
+            }
+
+            [alt="meninge"] {
+                grid-column: 1;
+                grid-row: 10;
+                align-self: center;
+            }
+
+            [alt="mozdane komore"] {
+                grid-row: 10;
+                grid-column: 2;
+            }
+            
+            .parallax {
+                border: 1px solid black;
+
+                @media only screen and (max-width: 558px) {
+                    min-height: 10rem;
+                    background-position: center;
+                }
+
+                @media only screen and (min-width: 558px) {
+                    min-height: 15rem;
+                    background-position: center;
+                }
+
+                @media only screen and (min-width: $laptop) {
+                    min-height: 20rem;
+                    max-width: 63rem;
+                    background-attachment: fixed;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+
+                @media only screen and (min-width: $laptopL) {
+                    grid-column: 1/-1;
+                    grid-row: 3;
+                    margin: 0;
+                    max-width: 100%;
+                    min-height: 30rem;
+                }
+                
+            }
+
+            img {
+                width: 95%;
+                @media only screen and (max-width: $tablet) {
+                    padding: 1rem 0;
+                }
+
+                @media only screen and (min-width: $laptopL) {
+                    padding: 0;
+                }
+            }
+
+            h2 {
+                grid-column: 1/-1;
+                grid-row: 1;
+                padding: 2rem 1rem;
+            }
+
+        }
+    }
+}

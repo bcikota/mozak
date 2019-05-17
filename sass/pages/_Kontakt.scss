@@ -1,0 +1,88 @@
+@import '../helpers/variables';
+
+.kontakt {
+    nav {
+        ul {
+            li {
+                &:nth-of-type(10) {
+                    a {
+                        color: rgb(177, 135, 30)!important;
+                        &:hover {
+                            color:  rgb(177, 135, 30) !important;
+                        }
+                    }
+                }  
+            }
+        }
+    }
+
+    section {
+        form {
+            max-width: 30rem;
+            margin: 0 auto;
+
+            .buttons {
+                max-width: 15rem;
+                margin: 3rem auto;
+                margin-bottom: 0;
+                
+                input {
+                    font-size: 1rem;
+                    border-radius: 0.3125rem;
+                    background-color: #fff6ea;
+                    padding: 0.3rem 1.5rem;
+
+                    &:hover {
+                        box-shadow: .05rem .05rem .2rem rgb(47, 47, 47);
+                        cursor: pointer;
+                    }
+
+                        @media only screen and (min-width: $laptopL) {
+                            font-size: 1.1rem;
+                        }
+
+                        &:last-of-type {
+                            float: right;
+                        }
+                }
+            }
+
+            fieldset {
+
+                label {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: 1.25rem;
+
+                    @media only screen and (min-width: $laptopL) {
+                        font-size: 1.3rem;
+                    }
+
+                    input {
+                        font-size: 1.25rem;
+            
+                        @media only screen and (min-width: $laptopL) {
+                            font-size: 1.3rem;
+                        }
+                    }
+
+                    textarea {
+                        font-size: 1.25rem;
+
+                        @media only screen and (min-width: $laptopL) {
+                            font-size: 1.3rem;
+                            font-family: "Trebuchet MS", Verdana, Arial, sans-serif;
+                        }
+                        
+                            
+                    }
+
+                    > * {
+                        margin: 1rem 0;
+                        padding: 0.2rem .5rem;
+                    }
+                }
+            }
+        }
+    }
+}

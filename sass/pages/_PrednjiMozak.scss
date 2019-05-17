@@ -1,0 +1,234 @@
+@import '../helpers/variables';
+
+.prednji {
+    nav {
+        ul {
+            li {
+                &:nth-of-type(7) {
+                    a {
+                        color: rgb(177, 135, 30)!important;
+                        &:hover {
+                            color:  rgb(177, 135, 30) !important;
+                        }
+                    }
+                }  
+            }
+        }
+    }
+
+    section {
+        article {
+            @media only screen and (min-width: $tablet) {
+                max-width: 30rem;
+            }
+
+            @media only screen and (min-width: $laptopL) {
+                max-width: 60rem;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-column-gap: 2rem;
+            }
+
+            h2 {
+                @media only screen and (min-width: $mobileL) {
+                    text-align: center;
+                }
+
+                @media only screen and (min-width: $laptopL) {
+                    grid-column: 1/-1;
+                }
+            }
+
+            b {
+                @media only screen and (min-width: $mobileL) {
+                    text-align: center;
+                }
+
+                @media only screen and (min-width: $laptopL) {
+                    grid-column: 1/-1;
+
+                    &:nth-of-type(2) {
+                        grid-column: 1/-1;
+                        grid-row: 5;
+                        max-width: 40rem;
+                        justify-self: center;
+                    }
+
+                    &:last-of-type {
+                        grid-column: 1/-1;
+                        max-width: 40rem;
+                        justify-self: center;
+                    }
+                }
+            }
+
+            [href="../images/PrednjiMozak/prednji.png"] {
+                @media only screen and (min-width: $laptopL) {
+                    display: block;
+                     grid-column: 1/-1;
+                }
+            }
+
+            [alt="talamus"] {
+                @media only screen and (min-width: $laptopL) {
+                    grid-column: 1;
+                    grid-row: 6;
+                    margin-top: 6rem;
+                }
+            }
+
+            [href="../images/PrednjiMozak/medjumozak/SubEpiMet.png"] {
+                @media only screen and (min-width: $laptopL) {
+                    display: block;
+                    grid-column: 2;
+                    grid-row: 7;
+                    align-self: center;
+                }
+            }
+
+           [ href="../images/PrednjiMozak/medjumozak/hipofiza.png"] {
+            @media only screen and (min-width: $laptopL) {
+                display: block;
+                grid-row: 10;
+                grid-column: 1;
+                
+                &:hover {
+                    grid-column: 1/-1;
+                    z-index: 1;
+                    img {
+                        max-width: 50rem;
+                        background: white;
+                        transition: 1s;
+                    }
+                }
+            }
+           }
+
+           [href="../images/PrednjiMozak/VelikiMozak/limbic.jpg"] {
+            @media only screen and (min-width: $laptopL) {
+                display: block;
+                grid-row: 14;
+                grid-column: 1;
+                align-self: center;
+                margin-top: 5rem;
+            }
+                
+           }
+
+           [href="../images/PrednjiMozak/VelikiMozak/bazal.jpg"] {
+            @media only screen and (min-width: $laptopL) {
+                display: block;
+                grid-column: 2;
+                grid-row: 15;
+                justify-self: start;
+                position: relative;
+                right: 2.5rem;
+            }
+           }
+
+           [href="../images/PrednjiMozak/VelikiMozak/cortex.jpg"] {
+            @media only screen and (min-width: $laptopL) {
+                grid-row: 23;
+                grid-column: 1/-1;
+            }
+           }
+
+           [alt="corpus-callosum"] {
+            @media only screen and (min-width: $laptopL) {
+                grid-column: 1;
+                grid-row: 17;
+            }
+           }
+
+           [alt="leva vs desna hemisfera"] {
+            @media only screen and (min-width: $laptopL) {
+                grid-column: 2;
+            }
+           }
+
+            p {
+                @media only screen and (min-width: $laptopL) {
+                    &:nth-of-type(1) {
+                        grid-column: 1;
+                        grid-row: 6;
+                    }
+    
+                    &:nth-of-type(2) {
+                        grid-column: 2;
+                        grid-row: 6;
+                    }
+    
+                    &:nth-of-type(4) {
+                        grid-column: 1/-1;
+                        grid-row: 8;
+                        max-width: 40rem;
+                        justify-self: center;
+                    }
+    
+                    &:nth-of-type(5) {
+                        grid-column: 1/-1;
+                        grid-row: 9;
+                        max-width: 40rem;
+                        justify-self: center;
+                    }
+    
+                    &:nth-of-type(6) {
+                        grid-column: 2;
+                        grid-row: 10;
+                    }
+    
+                    &:nth-of-type(7) {
+                        grid-column: 1;
+                        grid-row: 10;
+                        align-self: end;
+                    }
+    
+                    &:nth-of-type(8) {
+                        grid-column: 1;
+                        grid-row: 14;
+                    }
+    
+                    &:nth-of-type(9) {
+                        grid-column: 2;
+                        grid-row: 14;
+                    }
+
+                    &:nth-of-type(10) {
+                        grid-column: 1;
+                        grid-row: 15;
+                        max-width: 15rem;
+                        align-self: center;
+                        justify-self: end;
+                    }
+
+                    &:nth-of-type(11) {
+                        align-self: center;
+                    }
+
+                    &:nth-of-type(12) {
+                        grid-column: 1;
+                        grid-row: 18;
+                        align-self: center;
+                    }
+
+                    &:nth-of-type(13) {
+                        grid-column: 1/-1;
+                    }
+
+                    &:nth-of-type(16) {
+                        grid-row: 24;
+                    }
+
+                    &:nth-of-type(17) {
+                        grid-row: 24;
+                    }
+
+                    &:nth-of-type(18) {
+                        grid-column: 1/-1;
+                    }
+                }
+            }
+                
+        }
+    }
+}

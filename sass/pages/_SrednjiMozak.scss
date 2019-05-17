@@ -1,0 +1,72 @@
+@import '../helpers/variables';
+
+.srednji {
+    nav {
+        ul {
+            li {
+                &:nth-of-type(6) {
+                    a {
+                        color: rgb(177, 135, 30)!important;
+                        &:hover {
+                            color:  rgb(177, 135, 30) !important;
+                        }
+                    }
+                }  
+            }
+        }
+    }
+
+    section {
+        article {
+            @media only screen and (min-width: $tablet) {
+                max-width: 30rem;
+            }
+
+            @media only screen and (min-width: $laptopL) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                max-width: 60rem;
+                grid-column-gap: 2rem;
+            }
+
+            h2 {
+                @media only screen and (min-width: $laptopL) {
+                    grid-column: 1/-1;
+                }
+            }
+
+            b {
+                @media only screen and (min-width: $tablet) {
+                    text-align: center;
+                    grid-column: 1/-1;
+                }
+            }
+
+            p {
+                grid-column: 2;
+
+                &:last-of-type {
+                    grid-column: 1;
+                }
+            }
+
+            a {
+                @media only screen and (min-width:$laptopL) {
+                    display: block; 
+                }
+
+               &:first-of-type {
+                   grid-column: 1;
+                   grid-row: 3/5;
+                   align-self: center;
+               }
+               
+               &:last-of-type {
+                   grid-column: 2;
+                   grid-row: 6;
+               }
+               
+            }
+        }
+    }
+}

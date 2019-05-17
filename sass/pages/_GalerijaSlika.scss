@@ -1,0 +1,41 @@
+.galerija {
+    nav {
+        ul {
+            li {
+                &:nth-of-type(8) {
+                    a {
+                        color: rgb(177, 135, 30)!important;
+                        &:hover {
+                            color:  rgb(177, 135, 30) !important;
+                        }
+                    }
+                }  
+            }
+        }
+    }
+
+    section {
+        article {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+            grid-column-gap: 1rem;
+            justify-items: center;
+
+            a {
+                display: block;
+                padding: .5rem 0;
+            }
+
+            img {
+                width: 15rem;
+                height: 10rem;
+                padding: .2rem;
+                border-radius: 2rem;
+
+                &:hover{
+                    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+                }
+            }
+        }
+    }
+}

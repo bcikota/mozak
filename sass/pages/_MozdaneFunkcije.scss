@@ -1,0 +1,89 @@
+@import 'helpers/variables';
+@import '../helpers/mixins';
+
+.funkcije {
+    nav {
+        ul {
+            li {
+                &:nth-of-type(4) {
+                    a {
+                        color: rgb(177, 135, 30)!important;
+                        &:hover {
+                            color:  rgb(177, 135, 30) !important;
+                        }
+                    }
+                }  
+            }
+        }
+    }
+
+    section {
+        article {
+            @media only screen and (min-width: 880px) {
+                padding: 3rem;
+            }
+
+            @media only screen and (min-width: $laptopL) {
+                max-width: 60rem;
+                margin: 0 auto;
+            }
+
+            p {
+                &:nth-of-type(1) {
+                    border-bottom: 2px solid rgba(90, 58, 7, 0.438);
+                }
+
+                &:nth-of-type(2) {
+                    @media only screen and (min-width: $laptopL) {
+                        text-align: left;
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    @media only screen and (min-width: $laptopL) {
+                        text-align: left;
+                    }
+                }
+
+                &:nth-of-type(4) {
+                    border-top: 2px solid rgba(90, 58, 7, 0.438);
+                }
+            }
+
+            ul {
+                padding-top: 0;
+                padding-bottom: 0;
+                font-size: 1.25rem;
+
+                @media only screen and (min-width: $laptopL) {
+                    font-size: 1.3rem;
+                }
+               
+                li {
+                    @media only screen and (min-width: 550px) {
+                        font-size: 1.2rem;
+                    }
+        
+                    @media only screen and (min-width: $laptop) {
+                        font-size: 1.25rem;
+                    }
+        
+                    @media only screen and (min-width: $laptopL) {
+                        font-size: 1.3rem;
+                        max-width: 40rem;
+                        margin: 0 auto;
+                        text-align: center;
+                    }
+
+                    &:first-of-type {
+                        padding-bottom: 1rem;
+                    }
+
+                    &:last-of-type {
+                        padding-top: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}

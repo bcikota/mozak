@@ -1,0 +1,135 @@
+@import 'helpers/variables';
+@import '../helpers/mixins';
+
+.rombasti {
+    nav {
+        ul {
+            li {
+                &:nth-of-type(5) {
+                    a {
+                        color: rgb(177, 135, 30)!important;
+                        &:hover {
+                            color:  rgb(177, 135, 30) !important;
+                        }
+                    }
+                }  
+            }
+        }
+    }
+
+    section {
+        article {
+            padding: 1rem;
+            
+            @media only screen and (min-width: $tablet) {
+                max-width: 30rem;
+            }
+
+            @media only screen and (min-width: 880px) {
+                padding: 3rem;
+            }
+            
+            @media only screen and (min-width: $laptopL) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-gap: 2rem;
+                max-width: 60rem;
+
+                > * {
+                    padding: 0;
+                  }
+            }
+
+            h2 {
+                @media only screen and (min-width: $laptopL) {
+                    grid-column: 1/-1;
+                    padding: 2rem 0;
+                }
+            }
+
+            b {
+                @media only screen and (min-width: $tablet) {
+                    text-align: center;
+                }
+                
+                @media only screen and (min-width: $laptopL) {
+                    grid-column: 1/-1;
+                    max-width: 40rem;
+                    justify-self: center;
+                    padding-bottom: 2rem;
+                }
+            }
+
+            p {
+                @media only screen and (min-width: $laptopL) {
+                    grid-column: 1/-1;
+                }
+
+                &:nth-of-type(1) {
+                    @media only screen and (min-width: $laptopL) {
+                        grid-column: 1/2;
+                        grid-row: 3;
+                       
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    @media only screen and (min-width: $laptopL) {
+                        grid-column: 1;
+                        grid-row: 3/5;
+                        align-self: center;
+                        position: relative;
+                        bottom: 9rem;
+                    }
+                }
+
+                &:nth-of-type(3) {
+                    @media only screen and (min-width: $laptopL) {
+                        grid-column: 2;
+                    }
+                }
+
+                &:nth-of-type(4) {
+                    @media only screen and (min-width: $laptopL) {
+                        grid-column: 1;
+                    }
+                }
+            }
+            
+            img {
+                @media only screen and (min-width: $laptopL) {
+                    margin: 0;
+                }
+
+                &:nth-of-type(1) {
+                    @media only screen and (min-width: $laptopL) {
+                        grid-column: 2;
+                        grid-row: 3;
+                        justify-self: center;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    @media only screen and (min-width: $laptopL) {
+                        grid-column: 1;
+                        grid-row: 3/5;
+                        align-self: flex-end;
+                        position: relative;
+                        bottom: 10%;
+                        
+                    }
+                }
+
+                &:last-of-type {
+                    @media only screen and (min-width: $laptopL) {
+                        grid-column: 2;
+                        max-width: 25rem;
+                        justify-self: center;
+                    }
+                    
+                }
+            }
+
+        }
+    }
+}

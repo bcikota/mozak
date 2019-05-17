@@ -1,0 +1,47 @@
+@import '../helpers/mixins';
+@import '../helpers/variables';
+
+nav {
+    font-size: 1.25rem;
+}
+
+nav:last-of-type {
+    text-align: center;
+    padding: 1rem 0;
+
+    ul {
+        li {
+            padding: 1rem 0;
+            @media only screen and (min-width:$tablet) {
+                padding: 1.5rem 0;
+            }
+            a {
+                color: $svetla-slova !important;
+                &:hover {
+                    color:  rgb(177, 135, 30) !important;
+                }
+            }
+        }
+    }
+    
+    @media only screen and (min-width:$laptop) {
+        float: left;
+        position: sticky;
+        top: 0;
+        margin-bottom: 6rem;
+        width: 22%;
+     }
+
+     @media only screen and (min-width: 943px) {
+        width: 18%;
+    }
+
+    @media only screen and (min-width: $laptopL) {
+        width: 17%;
+    }
+
+    @media only screen and (min-width: 1214px) {
+        width: 14%;
+    }
+  
+}

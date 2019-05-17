@@ -1,0 +1,17 @@
+footer {
+    text-align: center;
+    line-height: 1.2;
+
+    @media only screen and (min-width:425px) {
+        clear: both;
+     }
+
+     @media only screen and (min-width:768px) {
+         font-size: 1.1rem;
+         line-height: 1.5;
+     }
+
+    a {
+        text-decoration: underline;
+    }
+}

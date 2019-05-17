@@ -1,0 +1,134 @@
+@import 'helpers/variables';
+@import '../helpers/mixins';
+
+.delovi {
+    nav {
+        ul {
+            li {
+                &:nth-of-type(2) {
+                    a {
+                        color: rgb(177, 135, 30)!important;
+                        &:hover {
+                            color:  rgb(177, 135, 30) !important;
+                        }
+                    }
+                }  
+            }
+        }
+    }
+
+    section {
+        article {
+            @media only screen and (min-width: 639px) {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            @media only screen and (min-width: 550px) {
+                width: 90%;
+                display: block;
+            }
+
+            @media only screen and (min-width: 880px) {
+                display: grid;
+                max-width: 60rem;
+                margin: 0 auto;
+                padding: 3rem 0;
+            }
+
+            h2 {
+                @media only screen and (min-width: $mobileL) {
+                    text-align: center;
+                }
+
+                @media only screen and (min-width: 639px) {
+                    grid-column: 1/-1; 
+                }   
+                
+            }
+
+            b {
+                grid-column: 1;
+                grid-row: 2;
+              
+                @media only screen and (min-width: $mobileL) {
+                    text-align: center;
+                }
+
+                @media only screen and (min-width: 639px) {
+                    text-align: left;
+                }
+
+                @media only screen and (min-width: $laptop) {
+                    text-align: center;
+                }
+
+                @media only screen and (min-width: 880px) {
+                    text-align: left;
+                }
+                
+            }
+
+            img {
+                grid-column: 2;
+                grid-row: 2/5;
+                align-self: center;
+
+                @media only screen and (min-width: 639px) {
+                    max-width: 20rem;
+                }
+
+               @media only screen and (min-width: 880px) {
+                    max-width: 30rem;
+                    padding: 0;
+                }
+            }
+
+            ul {
+                grid-column: 1;
+                padding-top: 0;
+                @media only screen and (min-width: $mobileL) {
+                    max-width: 13rem;
+                    margin: 0 auto;
+                }
+
+                @media only screen and (min-width: 639px) {
+                    margin: 0;
+                    float: left;
+                }
+
+                @media only screen and (min-width: $laptop) {
+                    max-width: 13rem;
+                    margin: 0 auto;
+                    float: none;
+                }
+
+                @media only screen and (min-width: 880px) {
+                    margin: 0;
+                }
+
+                li {
+                    font-size: 1.25rem;
+                    list-style-type: disc;
+                    margin-left: 1.25rem;
+
+                    @media only screen and (min-width: $laptopL) {
+                        font-size: 1.3rem;
+                        padding: .2rem 0;
+                    }
+                 }
+            }
+    
+            p {
+                grid-column: 1/-1;
+               
+                &:last-of-type {
+                    @media only screen and (min-width: $laptop) {
+                        padding-top: 0; 
+                    }
+                }
+            }
+             
+        }
+    }
+}
