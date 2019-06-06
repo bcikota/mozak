@@ -966,7 +966,7 @@ b {
   .wrapper-galerija a:nth-child(2) {
     position: absolute;
     width: 50%;
-    top: 60vh;
+    bottom: 0;
     z-index: 1;
     display: block;
     background: #585858;
@@ -990,7 +990,9 @@ b {
   .wrapper-galerija img:nth-child(3) {
     margin-top: .1rem;
     max-width: 30rem;
-    margin: 0 auto; }
+    margin: 0 auto;
+    position: absolute;
+    top: 40%; }
     @media only screen and (min-width: 769px) {
       .wrapper-galerija img:nth-child(3) {
         max-width: 37rem; } }
@@ -1001,7 +1003,7 @@ b {
     position: absolute;
     width: 50%;
     right: 0;
-    top: 60vh;
+    bottom: 0;
     display: block;
     background: #585858;
     border-left: .2rem solid #200c00; }
@@ -1029,7 +1031,6 @@ b {
     display: block;
     max-width: 13rem;
     margin: 0 auto;
-    margin-bottom: 2rem;
     z-index: 1;
     background: grey;
     color: #f0efef;
@@ -1037,9 +1038,6 @@ b {
     border-bottom-left-radius: .5rem;
     border-bottom-right-radius: .5rem;
     font-size: 1.2rem; }
-    @media only screen and (min-width: 426px) {
-      .wrapper-galerija [href="../GalerijaSlika.html"] {
-        margin-bottom: 0; } }
     @media only screen and (min-width: 769px) {
       .wrapper-galerija [href="../GalerijaSlika.html"] {
         padding: 1rem 2rem;
