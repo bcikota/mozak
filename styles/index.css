@@ -1044,7 +1044,7 @@ b {
           height: 100%;
           width: 100%; } }
   .wrapper-galerija a {
-    opacity: .7; }
+    opacity: .8; }
     .wrapper-galerija a:hover {
       opacity: 1; }
   .wrapper-galerija [href="../GalerijaSlika.html"] {
@@ -1072,31 +1072,54 @@ b {
       .wrapper-galerija [href="../GalerijaSlika.html"] {
         font-size: 1.5rem;
         font-weight: bold; } }
-  @media only screen and (min-width: 426px) {
-    .wrapper-galerija [alt="right"] {
-      position: absolute;
-      max-width: 10%;
-      top: 7rem;
-      right: 0;
-      display: inline; } }
-  @media only screen and (min-width: 769px) {
-    .wrapper-galerija [alt="right"] {
-      top: 15rem; } }
-  @media only screen and (min-width: 1025px) {
-    .wrapper-galerija [alt="right"] {
-      top: 17rem; } }
-  @media only screen and (min-width: 426px) {
-    .wrapper-galerija [alt="left"] {
-      position: absolute;
-      max-width: 10%;
-      top: 7rem;
-      left: 0;
-      display: inline; } }
-  @media only screen and (min-width: 769px) {
-    .wrapper-galerija [alt="left"] {
-      top: 15rem; } }
-  @media only screen and (min-width: 1025px) {
-    .wrapper-galerija [alt="left"] {
-      top: 17rem; } }
+  .wrapper-galerija [alt="right"] {
+    position: absolute;
+    width: 50%;
+    right: 0;
+    top: 80vh;
+    display: block;
+    background: #585858;
+    border-left: .2rem solid #200c00;
+    height: 5.2rem;
+    z-index: 1; }
+    @media only screen and (min-width: 426px) {
+      .wrapper-galerija [alt="right"] {
+        top: 40vh;
+        right: 0;
+        border: none;
+        background: none;
+        display: inline; } }
+    @media only screen and (min-width: 769px) {
+      .wrapper-galerija [alt="right"] {
+        top: 15rem;
+        width: 7rem;
+        height: 7rem; } }
+    @media only screen and (min-width: 1025px) {
+      .wrapper-galerija [alt="right"] {
+        top: 17rem; } }
+  .wrapper-galerija [alt="left"] {
+    position: absolute;
+    width: 50%;
+    top: 80vh;
+    display: block;
+    background: #585858;
+    border-right: .2rem solid #200c00;
+    height: 5.2rem;
+    left: 0;
+    z-index: 1; }
+    @media only screen and (min-width: 426px) {
+      .wrapper-galerija [alt="left"] {
+        top: 40vh;
+        border: none;
+        background: none;
+        display: inline; } }
+    @media only screen and (min-width: 769px) {
+      .wrapper-galerija [alt="left"] {
+        top: 15rem;
+        width: 7rem;
+        height: 7rem; } }
+    @media only screen and (min-width: 1025px) {
+      .wrapper-galerija [alt="left"] {
+        top: 17rem; } }
 
 /*# sourceMappingURL=index.css.map */
