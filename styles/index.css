@@ -965,14 +965,17 @@ b {
       margin: 0 auto; } }
   .wrapper-galerija a:nth-child(2) {
     position: absolute;
-    max-width: 30%;
-    top: 50vh;
-    display: inline;
-    left: 10%;
-    z-index: 1; }
+    width: 50%;
+    top: 60vh;
+    z-index: 1;
+    display: block;
+    background: #585858;
+    border-right: .2rem solid #200c00; }
+    .wrapper-galerija a:nth-child(2):active {
+      opacity: 1; }
     @media only screen and (min-width: 426px) {
       .wrapper-galerija a:nth-child(2) {
-        max-width: 10%;
+        width: 10%;
         top: 7rem;
         left: 0; } }
     @media only screen and (min-width: 769px) {
@@ -981,6 +984,9 @@ b {
     @media only screen and (min-width: 1025px) {
       .wrapper-galerija a:nth-child(2) {
         top: 17rem; } }
+    .wrapper-galerija a:nth-child(2) img {
+      height: 5rem;
+      width: 50%; }
   .wrapper-galerija img:nth-child(3) {
     margin-top: .1rem;
     max-width: 30rem;
@@ -993,13 +999,17 @@ b {
         max-width: 47rem; } }
   .wrapper-galerija a:nth-child(4) {
     position: absolute;
-    display: inline;
-    max-width: 30%;
-    right: 10%;
-    top: 50vh; }
+    width: 50%;
+    right: 0;
+    top: 60vh;
+    display: block;
+    background: #585858;
+    border-left: .2rem solid #200c00; }
+    .wrapper-galerija a:nth-child(4):active {
+      opacity: 1; }
     @media only screen and (min-width: 426px) {
       .wrapper-galerija a:nth-child(4) {
-        max-width: 10%;
+        width: 10%;
         top: 7rem;
         right: 0; } }
     @media only screen and (min-width: 769px) {
@@ -1008,6 +1018,9 @@ b {
     @media only screen and (min-width: 1025px) {
       .wrapper-galerija a:nth-child(4) {
         top: 17rem; } }
+    .wrapper-galerija a:nth-child(4) img {
+      height: 5rem;
+      width: 50%; }
   .wrapper-galerija a {
     opacity: .7; }
     .wrapper-galerija a:hover {
@@ -1024,6 +1037,9 @@ b {
     border-bottom-left-radius: .5rem;
     border-bottom-right-radius: .5rem;
     font-size: 1.2rem; }
+    @media only screen and (min-width: 426px) {
+      .wrapper-galerija [href="../GalerijaSlika.html"] {
+        margin-bottom: 0; } }
     @media only screen and (min-width: 769px) {
       .wrapper-galerija [href="../GalerijaSlika.html"] {
         padding: 1rem 2rem;
