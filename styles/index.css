@@ -975,18 +975,25 @@ b {
       opacity: 1; }
     @media only screen and (min-width: 426px) {
       .wrapper-galerija a:nth-child(2) {
-        width: 10%;
-        top: 7rem;
-        left: 0; } }
+        width: 5rem;
+        top: 40vh;
+        left: 0;
+        border: none;
+        background: none; } }
     @media only screen and (min-width: 769px) {
       .wrapper-galerija a:nth-child(2) {
-        top: 15rem; } }
+        top: 15rem;
+        width: 7rem; } }
     @media only screen and (min-width: 1025px) {
       .wrapper-galerija a:nth-child(2) {
         top: 17rem; } }
     .wrapper-galerija a:nth-child(2) img {
       height: 5rem;
       width: 50%; }
+      @media only screen and (min-width: 426px) {
+        .wrapper-galerija a:nth-child(2) img {
+          height: 100%;
+          width: 100%; } }
   .wrapper-galerija img:nth-child(3) {
     margin-top: .1rem;
     max-width: 30rem;
@@ -994,9 +1001,14 @@ b {
     position: absolute;
     left: 0;
     top: 25vh; }
+    @media only screen and (min-width: 426px) {
+      .wrapper-galerija img:nth-child(3) {
+        position: relative;
+        top: 5vh; } }
     @media only screen and (min-width: 769px) {
       .wrapper-galerija img:nth-child(3) {
-        max-width: 37rem; } }
+        max-width: 37rem;
+        position: static; } }
     @media only screen and (min-width: 1025px) {
       .wrapper-galerija img:nth-child(3) {
         max-width: 47rem; } }
@@ -1012,18 +1024,25 @@ b {
       opacity: 1; }
     @media only screen and (min-width: 426px) {
       .wrapper-galerija a:nth-child(4) {
-        width: 10%;
-        top: 7rem;
-        right: 0; } }
+        width: 5rem;
+        top: 40vh;
+        right: 0;
+        border: none;
+        background: none; } }
     @media only screen and (min-width: 769px) {
       .wrapper-galerija a:nth-child(4) {
-        top: 15rem; } }
+        top: 15rem;
+        width: 7rem; } }
     @media only screen and (min-width: 1025px) {
       .wrapper-galerija a:nth-child(4) {
         top: 17rem; } }
     .wrapper-galerija a:nth-child(4) img {
       height: 5rem;
       width: 50%; }
+      @media only screen and (min-width: 426px) {
+        .wrapper-galerija a:nth-child(4) img {
+          height: 100%;
+          width: 100%; } }
   .wrapper-galerija a {
     opacity: .7; }
     .wrapper-galerija a:hover {
