@@ -1088,7 +1088,7 @@ b {
         right: 0;
         border: none;
         background: none;
-        display: inline; } }
+        width: 5rem; } }
     @media only screen and (min-width: 769px) {
       .wrapper-galerija [alt="right"] {
         top: 15rem;
@@ -1109,10 +1109,10 @@ b {
     z-index: 1; }
     @media only screen and (min-width: 426px) {
       .wrapper-galerija [alt="left"] {
+        width: 5rem;
         top: 40vh;
         border: none;
-        background: none;
-        display: inline; } }
+        background: none; } }
     @media only screen and (min-width: 769px) {
       .wrapper-galerija [alt="left"] {
         top: 15rem;
